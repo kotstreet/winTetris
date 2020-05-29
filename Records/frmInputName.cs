@@ -38,5 +38,13 @@ namespace WinTetris.Records
                 e.Cancel = true;
             }
         }
+
+        private void frmInputName_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                btnOk.PerformClick();
+            }
+        }
     }
 }

@@ -85,6 +85,12 @@ public abstract class Figure
     /// <param name="gameField">game field</param>
     public void Rotate(TypeOfCell[,] gameField)
     {
+        //check for square
+        if(TypeOfCell == TypeOfCell.StaticO)
+        {
+            return;
+        }
+
         //copy array
         var position = new Point[4];
         Array.Copy(Position, position, Position.Length);
